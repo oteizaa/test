@@ -1,0 +1,5 @@
+when HTTP_REQUEST {
+
+HTTP::header insert X-CUS-Forwarded-Client-IP [IP::local_addr]
+
+}
